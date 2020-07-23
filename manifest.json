@@ -1,0 +1,21 @@
+{	
+	"manifest_version": 2,
+	"version": "1.0",
+	
+	"name": "No awards for Reddit",
+	"description": "Hide awards on posts and comments for redesigned and also old Reddit.",
+	"author": "datguysheepy",
+	
+	"icons": {
+		"48": "no-awards48.png",
+		"96": "no-awards96.png",
+		"128": "no-awards128.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.reddit.com/*"],
+			"js": ["no-awards.js"]
+		}
+	]
+}
