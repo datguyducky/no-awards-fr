@@ -1,5 +1,5 @@
 # 🎖️ No awards for Reddit
-This is a simple browser extension for Firefox and Chrome that hides all rewards from redesigned and old Reddit (on comments and posts).
+This is a simple browser extension for Firefox and Chrome (coming soon) that hides all rewards from redesigned and old Reddit (on comments and posts).
 
 Let me know if this extension stopped working, or if in some cases awards are properly hidden and in others not, so I can fix that.
 
