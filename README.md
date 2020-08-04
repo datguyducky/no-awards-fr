@@ -1,7 +1,14 @@
 # 🎖️ No awards for Reddit
-This is a simple browser extension for Firefox and Chrome (coming soon) that hides all rewards from redesigned and old Reddit (on comments and posts).
+I'm sure I'm not the only one annoyed by the awards on Reddit. So I created this simple extension to completely hide them (on posts and comments), so if you would like to browse Reddit without them, **download** it from here:
 
-Let me know if this extension stopped working, or if in some cases awards are properly hidden and in others not, so I can fix that.
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/no-awards-for-reddit/)
+- [Google Chrome, Vivaldi, Opera, etc.](https://chrome.google.com/webstore/detail/no-awards-for-reddit/ehpnjdkpdllckhmbglbpdbmddcnloeep)
+
+**TLDR:**
+- free and open-source
+- used daily by me, so if it stops working I will try to fix ASAP
+- works on redesigned and old version of Reddit
+- disable awards on posts and comments
 
 
 ## Hide awards on mobile
@@ -15,7 +22,7 @@ While I'm not available to make this work on mobile, there are a lot of **unoffi
 * Apollo [iOS](https://apps.apple.com/app/id979274575)
 * Comet [iOS](https://apps.apple.com/us/app/id1146204813)
 
-***I'm not a developer of any of these apps, use this list only as a suggestion to which app to use. Not all of them may have an option to disable awards.***
+***I'm not a developer of any of these apps, use this list only as a suggestion to which app you can use. Not all of them may have an option to disable awards.***
 
 ## 📝 License 
 No awards for Reddit is an open-source project licensed under the [MIT License](https://github.com/datguysheepy/no-awards-fr/blob/master/LICENSE).
