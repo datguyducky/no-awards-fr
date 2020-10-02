@@ -16,6 +16,7 @@ const config = {
 // Callback function to execute when mutations are observed
 const callback = (mutationsList, observer) => {
   // hide awards on posts and comments
+  // used only in new Reddit
   const NEW_AWARDS_BAR = document.getElementsByClassName(
     "_1wgnb6w6OJogtEV2N4B3lD"
   );
@@ -24,6 +25,7 @@ const callback = (mutationsList, observer) => {
   }
 
   // hide awards on cross-posted posts
+  // used only in new Reddit
   const CROSS_POST_NEW_AWARDS_BAR = document.getElementsByClassName(
     "_3XoW0oYd5806XiOr24gGdb"
   );
@@ -35,6 +37,31 @@ const callback = (mutationsList, observer) => {
   const OLD_AWARDS_BAR = document.getElementsByClassName("awardings-bar");
   for (let i = 0; i < OLD_AWARDS_BAR.length; i++) {
     OLD_AWARDS_BAR[i].style.display = "none";
+  }
+
+  // hide animated awards (both icon and the box-shadow arround the comment)
+  // used only in new Reddit
+  const ANIMATED_BOX = document.getElementsByClassName(
+    "_3VH2iGVh92XtlKq0-eVoEN"
+  );
+  for (let i = 0; i < ANIMATED_BOX.length; i++) {
+    ANIMATED_BOX[i].style.display = "none";
+  }
+
+  const ANIMATED_ICON = document.getElementsByClassName(
+    "_28x1bnTjOY6zWZfooCxkKQ"
+  );
+  for (let i = 0; i < ANIMATED_ICON.length; i++) {
+    ANIMATED_ICON[i].style.display = "none";
+  }
+
+  // hide background-gradient for comments with a lot of awards(?)
+  // used only in new Reddit
+  const BOX_WITH_GRADIENT = document.getElementsByClassName(
+    "TmlaIdEplCzZ0F1aRGYQh"
+  );
+  for (let i = 0; i < BOX_WITH_GRADIENT.length; i++) {
+    BOX_WITH_GRADIENT[i].style.background = "inherit";
   }
 };
 
