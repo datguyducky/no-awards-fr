@@ -3,19 +3,19 @@
 	ONLY FOR NEW REDDIT
 */
 ._1wgnb6w6OJogtEV2N4B3lD {
-  display: none;
+  display: none !important;
 }
 /* 
 	cross-posted posts have different div wrapper for the awards
 	this styling hides it completely - USED ON NEW REDDIT.COM
 */
 ._3XoW0oYd5806XiOr24gGdb {
-  display: none;
+  display: none !important;
 }
 
 /* wrapper div for awards used only on OLD.REDDIT.COM */
 .awardings-bar {
-  display: none;
+  display: none !important;
 }
 
 /* 
@@ -31,7 +31,7 @@
 	ONLY FOR NEW REDDIT
 */
 ._28x1bnTjOY6zWZfooCxkKQ {
-  display: none;
+  display: none !important;
 }
 
 /* 
@@ -40,5 +40,5 @@
 	ONLY FOR NEW REDDIT
 */
 .TmlaIdEplCzZ0F1aRGYQh {
-  background: inherit;
+  background: inherit !important;
 }
