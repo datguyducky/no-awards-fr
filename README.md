@@ -6,9 +6,10 @@ I'm sure I'm not the only one annoyed by the awards on Reddit. So I created this
 
 **TLDR:**
 - free and open-source
-- used daily by me, so if it stops working I will try to fix ASAP
+- used daily by me, so if it stops working I will try to fix it ASAP
 - works on redesigned and old version of Reddit
 - disable awards on posts and comments
+- disable animated awards on comments <sup>**NEW**</sup>
 
 
 ## Hide awards on mobile
