@@ -1,5 +1,5 @@
 # 🎖️ No awards for Reddit
-I'm sure I'm not the only one annoyed by the awards on Reddit. So I created this simple extension to completely hide them (on posts and comments), so if you would like to browse Reddit without them, **download** it from here:
+I'm sure I'm not the only one annoyed by the awards on Reddit. So I created this simple extension to completely hide them (on posts and comments), so if you would like to browse Reddit without them - **download** it from here:
 
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/no-awards-for-reddit/)
 - [Google Chrome, Vivaldi, Opera, etc.](https://chrome.google.com/webstore/detail/no-awards-for-reddit/ehpnjdkpdllckhmbglbpdbmddcnloeep)
