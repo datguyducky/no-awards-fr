@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Settings for the No Awards for Reddit extension</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      button:focus,
+      input:focus {
+        outline: none;
+      }
+
+      .ext-menu-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+      }
+
+      .ext-menu-header {
+        font-size: 14px;
+        margin: 0;
+        margin-bottom: 6px;
+        padding: 0 8px;
+        margin-top: 8px;
+      }
+
+      .op-wrap {
+        display: flex;
+        margin-top: 6px;
+        padding: 0 8px;
+      }
+
+      .toggle-wrap {
+        position: relative;
+        display: inline-block;
+        width: 38px;
+        vertical-align: middle;
+        user-select: none;
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e2e8f0;
+        transition-property: background-color, border-color, color, fill, stroke,
+          opacity, box-shadow, transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+        transition-duration: 0.2s;
+        margin-left: auto;
+      }
+
+      .toggle-checkbox {
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 9999px;
+        background-color: #fff;
+        border: solid #e2e8f0 4px;
+        appearance: none;
+        cursor: pointer;
+        box-sizing: border-box;
+        padding: 0;
+        font-family: inherit;
+        font-size: 100%;
+        margin: 0;
+        overflow: visible;
+      }
+
+      .toggle-label {
+        display: block;
+        overflow: hidden;
+        height: 20px;
+        background-color: #e2e8f0;
+        cursor: pointer;
+        border-radius: 9999px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .toggle-checkbox:checked {
+        border: 4px solid #68d391;
+        right: 0;
+        border-color: #68d391;
+      }
+
+      .toggle-checkbox:checked + .toggle-label {
+        background-color: #68d391;
+      }
+
+      .op-label {
+        font-size: 14px;
+        margin-right: 8px;
+      }
+
+      footer {
+        margin-top: 12px;
+        font-size: 12px;
+        font-weight: bold;
+        background-color: #e2e8f0;
+        padding: 2px 8px;
+      }
+
+      footer > a {
+        color: inherit;
+      }
+
+      .save-btn {
+        appearance: none;
+        background-color: inherit;
+        border: none;
+        display: inline-block;
+        width: auto;
+        margin-left: auto;
+        font-size: 14px;
+        margin-top: 18px;
+        margin-right: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        color: #000;
+        position: relative;
+      }
+
+      .save-btn:hover {
+        color: #444;
+      }
+
+      /* Tooltip text element from w3schools.com */
+      .save-btn .tooltiptext {
+        visibility: hidden;
+        width: auto;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      /* Tooltip arrow */
+      .save-btn .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #333 transparent transparent transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ext-menu-wrap">
+      <h1 class="ext-menu-header">Select which awards to hide:</h1>
+      <div class="op-wrap">
+        <label for="toggle-op1" class="op-label">
+          The give awards buttons:
+        </label>
+        <div class="toggle-wrap">
+          <input
+            type="checkbox"
+            name="toggle"
+            id="toggle-op1"
+            class="toggle-checkbox"
+          />
+          <label for="toggle-op1" class="toggle-label"></label>
+        </div>
+      </div>
+      <div class="op-wrap">
+        <label for="toggle-op2" class="op-label">
+          All awards on the RPAN streams:
+        </label>
+        <div class="toggle-wrap">
+          <input
+            type="checkbox"
+            name="toggle"
+            id="toggle-op2"
+            class="toggle-checkbox"
+          />
+          <label for="toggle-op2" class="toggle-label"></label>
+        </div>
+      </div>
+      <div class="op-wrap">
+        <label for="toggle-op3" class="op-label">
+          All awards on the comments:
+        </label>
+        <div class="toggle-wrap">
+          <input
+            type="checkbox"
+            name="toggle"
+            id="toggle-op3"
+            class="toggle-checkbox"
+          />
+          <label for="toggle-op3" class="toggle-label"></label>
+        </div>
+      </div>
+      <div class="op-wrap">
+        <label for="toggle-op4" class="op-label">
+          All awards on the posts:
+        </label>
+        <div class="toggle-wrap">
+          <input
+            type="checkbox"
+            name="toggle"
+            id="toggle-op4"
+            class="toggle-checkbox"
+          />
+          <label for="toggle-op4" class="toggle-label"></label>
+        </div>
+      </div>
+      <div class="op-wrap">
+        <label for="toggle-op5" class="op-label">
+          The get coins/premium buttons:
+        </label>
+        <div class="toggle-wrap">
+          <input
+            type="checkbox"
+            name="toggle"
+            id="toggle-op5"
+            class="toggle-checkbox"
+          />
+          <label for="toggle-op5" class="toggle-label"></label>
+        </div>
+      </div>
+
+      <button class="save-btn">
+        Save settings
+        <span class="tooltiptext">Settings were saved</span>
+      </button>
+
+      <footer>
+        extension created by
+        <a href="https://github.com/datguysheepy/no-awards-fr/" target="_blank">
+          @datguysheepy
+        </a>
+      </footer>
+    </div>
+
+    <script src="handle-settings.js"></script>
+  </body>
+</html>

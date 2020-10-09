@@ -12,10 +12,22 @@
     "128": "no-awards128.png"
   },
 
+  "permissions": ["storage"],
+
   "content_scripts": [
     {
       "matches": ["*://*.reddit.com/*"],
       "css": ["no-awards.css"]
     }
-  ]
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "16": "no-awards16.png",
+      "24": "no-awards24.png",
+      "32": "no-awards32.png"
+    },
+    "default_title": "No Awards for Reddit",
+    "default_popup": "no-awards-menu.html"
+  }
 }
