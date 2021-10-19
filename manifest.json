@@ -12,15 +12,6 @@
     "128": "no-awards128.png"
   },
 
-  "permissions": ["storage"],
-
-  "content_scripts": [
-    {
-      "matches": ["*://*.reddit.com/*"],
-      "css": ["no-awards.css"]
-    }
-  ],
-
   "browser_action": {
     "default_icon": {
       "16": "no-awards16.png",
@@ -29,5 +20,17 @@
     },
     "default_title": "No Awards for Reddit",
     "default_popup": "no-awards-menu.html"
-  }
+  },
+
+  "permissions": ["storage"],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "run_at": "document_start",
+      "js": ["no-awards.js"]
+    }
+  ],
+
+  "web_accessible_resources": ["no-awards.css"]
 }
