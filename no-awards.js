@@ -7,14 +7,22 @@ const applyStyling = (key) => {
 	document.documentElement.insertBefore(styling, null);
 };
 
-const loadStyling = () => {
-	chrome.storage.local.get(null, (userSettings) => {
-		Object.entries(userSettings).forEach(([key, checked]) => {
-			if (checked) {
-				applyStyling(key);
-			}
-		});
-	});
+const loadStyling = async () => {
+	await chrome.storage.local.get(
+		{
+			giveAwardsBtn: false,
+			rpanAwards: true,
+			commentsAndPostsAwards: true,
+			getCoinsBtn: false,
+		},
+		(userSettings) => {
+			Object.entries(userSettings).forEach(([key, checked]) => {
+				if (checked) {
+					applyStyling(key);
+				}
+			});
+		}
+	);
 };
 
 loadStyling();

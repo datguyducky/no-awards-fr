@@ -1,4 +1,4 @@
-const saveSettings = () => {
+const saveSettings = async () => {
 	// get all select elements
 	const GIVE_AWARD_BTNS = document.getElementById("toggle-op1").checked;
 	const RPAN_AWARDS = document.getElementById("toggle-op2").checked;
@@ -7,7 +7,7 @@ const saveSettings = () => {
 	const GET_COINS_BTN = document.getElementById("toggle-op4").checked;
 
 	// save select elements :checked value to browser local storage
-	chrome.storage.local.set(
+	await chrome.storage.local.set(
 		{
 			giveAwardsBtn: GIVE_AWARD_BTNS,
 			rpanAwards: RPAN_AWARDS,
@@ -33,8 +33,8 @@ const saveSettings = () => {
 };
 
 // load all the select elements :checked value and assign it to the elements itself
-const loadSettings = () => {
-	chrome.storage.local.get(
+const loadSettings = async () => {
+	await chrome.storage.local.get(
 		{
 			giveAwardsBtn: false,
 			rpanAwards: true,
