@@ -1,0 +1,27 @@
+/* 
+    hide "give awards" button on RPAN
+    RPAN WORKS ONLY ON NEW REDDIT
+*/
+.BtTZ62LYQAh6Ezp2xw_4R._1pWwFWQOxI4UHucSbgy7Yr {
+	display: none !important;
+}
+
+/*
+    hide "give award" button on posts
+    NEW REDDIT
+*/
+._10K5i7NW6qcm-UoCtpB3aK.YszYBnnIoNY8pZ6UwCivd._3yh2bniLq7bYr4BaiXowdO._1EWxiIupuIjiExPQeK4Kud._28vEaVlLWeas1CDiLuTCap {
+	display: none !important;
+}
+
+/*
+    hide "give award" button and div wrapper on posts and comments
+    OLD REDDIT
+*/
+.give-gold.gold-give-gold {
+	display: none !important;
+}
+
+.give-gold-button {
+	display: none !important;
+}

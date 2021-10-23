@@ -1,21 +1,42 @@
 {
-  "manifest_version": 2,
-  "version": "2.0.1",
+	"manifest_version": 2,
+	"version": "2.1.0",
 
-  "name": "No awards for Reddit",
-  "description": "Hide awards on posts and comments for redesigned and also old Reddit.",
-  "author": "datguysheepy",
+	"name": "No awards for Reddit",
+	"description": "Hide awards on posts and comments for redesigned and also old Reddit.",
+	"author": "datguysheepy",
 
-  "icons": {
-    "48": "no-awards48.png",
-    "96": "no-awards96.png",
-    "128": "no-awards128.png"
-  },
+	"icons": {
+		"48": "no-awards48.png",
+		"96": "no-awards96.png",
+		"128": "no-awards128.png"
+	},
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.reddit.com/*"],
-      "css": ["no-awards.css"]
-    }
-  ]
+	"browser_action": {
+		"default_icon": {
+			"16": "no-awards16.png",
+			"24": "no-awards24.png",
+			"32": "no-awards32.png"
+		},
+		"default_title": "No Awards for Reddit",
+		"default_popup": "no-awards-menu.html"
+	},
+
+	"permissions": ["storage", "tabs"],
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.reddit.com/*"],
+			"run_at": "document_start",
+			"js": ["no-awards.js"]
+		}
+	],
+
+	"web_accessible_resources": [
+		"css/no-awards.css",
+		"css/commentsAndPostsAwards.css",
+		"css/rpanAwards.css",
+		"css/getCoinsBtn.css",
+		"css/giveAwardsBtn.css"
+	]
 }
