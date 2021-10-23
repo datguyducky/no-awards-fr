@@ -115,10 +115,7 @@
 				border: none;
 				display: inline-block;
 				width: auto;
-				margin-left: auto;
 				font-size: 14px;
-				margin-top: 18px;
-				margin-right: 8px;
 				font-weight: bold;
 				cursor: pointer;
 				padding: 0;
@@ -130,7 +127,6 @@
 				color: #444;
 			}
 
-			/* Tooltip text element from w3schools.com */
 			.save-btn .tooltiptext {
 				visibility: hidden;
 				width: auto;
@@ -139,6 +135,7 @@
 				text-align: center;
 				padding: 5px 0;
 				border-radius: 6px;
+				font-weight: normal;
 
 				/* Position the tooltip text */
 				position: absolute;
@@ -163,11 +160,31 @@
 				border-style: solid;
 				border-color: #333 transparent transparent transparent;
 			}
+
+			.button-wrap {
+				display: flex;
+				margin-top: 18px;
+				margin-right: 8px;
+				align-items: center;
+				justify-content: flex-end;
+			}
+
+			.reload-icon {
+				appearance: none;
+				background: inherit;
+				width: 16px;
+				height: 16px;
+				border: none;
+				margin-right: 8px;
+				cursor: pointer;
+				padding: 0;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="ext-menu-wrap">
 			<h1 class="ext-menu-header">Select which awards to hide:</h1>
+
 			<div class="op-wrap">
 				<label for="toggle-op1" class="op-label">
 					Give awards buttons:
@@ -182,6 +199,7 @@
 					<label for="toggle-op1" class="toggle-label"></label>
 				</div>
 			</div>
+
 			<div class="op-wrap">
 				<label for="toggle-op2" class="op-label">
 					On RPAN streams:
@@ -196,6 +214,7 @@
 					<label for="toggle-op2" class="toggle-label"></label>
 				</div>
 			</div>
+
 			<div class="op-wrap">
 				<label for="toggle-op3" class="op-label">
 					On comments and posts:
@@ -210,6 +229,7 @@
 					<label for="toggle-op3" class="toggle-label"></label>
 				</div>
 			</div>
+
 			<div class="op-wrap">
 				<label for="toggle-op4" class="op-label">
 					Get coins buttons:
@@ -225,10 +245,31 @@
 				</div>
 			</div>
 
-			<button class="save-btn">
-				Save settings
-				<span class="tooltiptext">Settings were saved</span>
-			</button>
+			<div class="button-wrap">
+				<button
+					class="reload-icon"
+					title="Reload the page to see the changes"
+				>
+					<svg
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+						></path>
+					</svg>
+				</button>
+
+				<button class="save-btn" title="Save settings">
+					Save settings
+					<span class="tooltiptext">Settings were saved</span>
+				</button>
+			</div>
 
 			<footer>
 				extension created by

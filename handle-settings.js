@@ -30,6 +30,8 @@ const saveSettings = async () => {
 			}, 450);
 		}
 	);
+
+	reloadPage();
 };
 
 // load all the select elements :checked value and assign it to the elements itself
@@ -53,7 +55,23 @@ const loadSettings = async () => {
 	);
 };
 
+const reloadPage = () => {
+	chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+		const url = tabs[0].url;
+
+		const redditDomain = /.*:\/\/.*\.reddit\.com\/.*/;
+
+		if (redditDomain.test(url)) {
+			chrome.tabs.reload(tabs[0].id);
+		}
+	});
+};
+
 document.addEventListener("DOMContentLoaded", loadSettings);
 document
 	.getElementsByClassName("save-btn")[0]
 	.addEventListener("click", saveSettings);
+
+document
+	.getElementsByClassName("reload-icon")[0]
+	.addEventListener("click", reloadPage);

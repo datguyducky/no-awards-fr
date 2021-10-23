@@ -22,7 +22,7 @@
 		"default_popup": "no-awards-menu.html"
 	},
 
-	"permissions": ["storage"],
+	"permissions": ["storage", "tabs"],
 
 	"content_scripts": [
 		{
