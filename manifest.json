@@ -3,7 +3,7 @@
 	"version": "2.2.0",
 
 	"name": "No awards for Reddit",
-	"description": "Hide awards on posts and comments for redesigned and also old Reddit.",
+	"description": "Hide awards all over the redesigned and old Reddit (on posts, comments, RPAN streams and more)",
 	"author": "datguysheepy",
 
 	"icons": {
