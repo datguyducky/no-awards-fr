@@ -2,10 +2,14 @@
     hide "get coins" button at the navigation bar
     NEW REDDIT
 */
-._1t5i5bNwZeJ7FuUXZ9rM-p {
-	display: none;
+#COIN_PURCHASE_DROPDOWN_ID {
+	display: none !important;
 }
 
-._1t5i5bNwZeJ7FuUXZ9rM-p._1dJtiWITrnvIbQdXgYgdym {
+/*
+    hide "Coins X" on user settings menu/dropdown
+    NEW REDDIT
+*/
+._3zu1R6cDitNjrJaFA1VPXj._3fbofimxVp_hpVM6I1TGMS {
 	display: none !important;
 }

@@ -25,3 +25,20 @@
 .give-gold-button {
 	display: none !important;
 }
+
+/*
+    hide "give award" button on comments
+    NEW REDDIT
+*/
+.XZK-LTFT5CgGo9MvPQQsy._1LXnp2ufrzN6ioaTLTjGQ1._3rHRwVOKmBBlBOQ4kIW_vq._2_lhaFUJdP8q0o2L9MN2TN
+	> ._374Hkkigy4E4srsI2WktEd._2hr3tRWszeMRQ0u_Whs7t8._14hLFU5cIJCyxH9DSgsCov:nth-child(2) {
+	display: none;
+}
+
+/*
+    hide award icon next to user name/other awards on posts and comments
+    NEW REDDIT
+*/
+._1vpnHb2bSTD6BcgVKisnPT._3vGYJIJIswDD8YOAMWGC4N {
+	display: none !important;
+}

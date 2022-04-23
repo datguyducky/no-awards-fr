@@ -12,8 +12,11 @@ I'm sure I'm not the only one annoyed by the awards on Reddit. So I created this
 -   works on redesigned and old version of Reddit
 -   disable awards on posts and comments
 -   disable animated awards on comments
--   disable awards on RPAN <sup>**NEW**</sup>
--   settings pop-up to customize which awards to show (for example: _show awards on RPAN, but not on comments and posts_) <sup>**NEW**</sup>
+-   disable awards on RPAN
+-   settings pop-up to customize which awards to show (for example: _show awards on RPAN, but not on comments and posts_)
+-   hide "Give Awards" on comments and posts <sup>**NEW**</sup>
+-   hide "Coins X" on your profile dropdown <sup>**NEW**</sup>
+-   option to show all awards but make them non-interactive <sup>**NEW**</sup>
 
 ## Settings pop-up:
 
@@ -23,7 +26,7 @@ I'm sure I'm not the only one annoyed by the awards on Reddit. So I created this
 
 While I'm not available to make this work on mobile, there are a lot of **unofficial Reddit apps** for download and some of them have an option to hide awards, to name a few:
 
--   Rif is fun [Android](https://www.play.google.com/store/apps/details?id=com.andrewshu.android.reddit)
+-   Rif is fun [Android](https://play.google.com/store/apps/details?id=com.andrewshu.android.reddit)
 -   Sync [Android](https://play.google.com/store/apps/details?id=com.laurencedawson.reddit_sync)
 -   Boost [Android](https://play.google.com/store/apps/details?id=com.rubenmayayo.reddit)
 -   Slide [Android](https://play.google.com/store/apps/details?id=me.ccrama.redditslide) & [iOS](https://apps.apple.com/us/app/slide-for-reddit/id1260626828)

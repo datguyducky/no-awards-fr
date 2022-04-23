@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
-	"version": "2.1.0",
+	"version": "2.2.0",
 
 	"name": "No awards for Reddit",
-	"description": "Hide awards on posts and comments for redesigned and also old Reddit.",
+	"description": "Hide awards all over the redesigned and old Reddit (on posts, comments, RPAN streams and more)",
 	"author": "datguysheepy",
 
 	"icons": {
@@ -33,10 +33,10 @@
 	],
 
 	"web_accessible_resources": [
-		"css/no-awards.css",
 		"css/commentsAndPostsAwards.css",
 		"css/rpanAwards.css",
 		"css/getCoinsBtn.css",
-		"css/giveAwardsBtn.css"
+		"css/giveAwardsBtn.css",
+		"css/test.css"
 	]
 }
