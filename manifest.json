@@ -33,10 +33,10 @@
 	],
 
 	"web_accessible_resources": [
-		"css/no-awards.css",
 		"css/commentsAndPostsAwards.css",
 		"css/rpanAwards.css",
 		"css/getCoinsBtn.css",
-		"css/giveAwardsBtn.css"
+		"css/giveAwardsBtn.css",
+		"css/test.css"
 	]
 }

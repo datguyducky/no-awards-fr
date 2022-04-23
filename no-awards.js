@@ -14,6 +14,7 @@ const loadStyling = async () => {
 			rpanAwards: true,
 			commentsAndPostsAwards: true,
 			getCoinsBtn: false,
+			notInteractableAwards: false,
 		},
 		(userSettings) => {
 			Object.entries(userSettings).forEach(([key, checked]) => {

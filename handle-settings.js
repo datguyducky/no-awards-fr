@@ -5,6 +5,9 @@ const saveSettings = async () => {
 	const COMMENTS_AND_POSTS_AWARDS =
 		document.getElementById("toggle-op3").checked;
 	const GET_COINS_BTN = document.getElementById("toggle-op4").checked;
+	const NOT_INTERACTABLE_AWARDS = document.getElementById(
+		"toggle-notInteractableAwards"
+	).checked;
 
 	// save select elements :checked value to browser local storage
 	await chrome.storage.local.set(
@@ -13,6 +16,7 @@ const saveSettings = async () => {
 			rpanAwards: RPAN_AWARDS,
 			commentsAndPostsAwards: COMMENTS_AND_POSTS_AWARDS,
 			getCoinsBtn: GET_COINS_BTN,
+			notInteractableAwards: NOT_INTERACTABLE_AWARDS,
 		},
 		() => {
 			setTimeout(() => {
@@ -42,6 +46,7 @@ const loadSettings = async () => {
 			rpanAwards: true,
 			commentsAndPostsAwards: true,
 			getCoinsBtn: false,
+			notInteractableAwards: false,
 		},
 		(settings) => {
 			document.getElementById("toggle-op1").checked =
@@ -51,6 +56,8 @@ const loadSettings = async () => {
 				settings.commentsAndPostsAwards;
 			document.getElementById("toggle-op4").checked =
 				settings.getCoinsBtn;
+			document.getElementById("toggle-notInteractableAwards").checked =
+				settings.notInteractableAwards;
 		}
 	);
 };
