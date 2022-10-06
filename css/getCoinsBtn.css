@@ -13,3 +13,11 @@
 ._3zu1R6cDitNjrJaFA1VPXj._3fbofimxVp_hpVM6I1TGMS {
 	display: none !important;
 }
+
+/* 
+ 	wrapper for the "get coins" and "popular" buttons, so we only hide the span element that is used for the get coins
+ 	NEW REDDIT
+ */
+._1vXXD2qKLnHetdKvisFzBD span._3dZnYgFFpifT-M_Vs2FAq6 {
+	display: none !important;
+}
