@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	"version": "2.2.0",
+	"version": "2.2.1",
 
 	"name": "No awards for Reddit",
 	"description": "Hide awards all over the redesigned and old Reddit (on posts, comments, RPAN streams and more)",
