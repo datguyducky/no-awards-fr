@@ -1,0 +1,24 @@
+/*
+	awards received tab/link on profile
+	NEW REDDIT
+ */
+a[href$="/gilded/"]._1JNzvBgvzSnX27gUBKqqmJ {
+	display: none !important;
+}
+
+/*
+	awards given tab/link on profile
+	NEW REDDIT
+ */
+a[href$="/gilded/given/"]._1JNzvBgvzSnX27gUBKqqmJ {
+	display: none !important;
+}
+
+/*
+	"gilded" tab on profile
+	OLD REDDIT
+ */
+
+ul.tabmenu li a[href$="/gilded/"].choice {
+	display: none !important;
+}

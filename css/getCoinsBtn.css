@@ -17,7 +17,15 @@
 /* 
  	wrapper for the "get coins" and "popular" buttons, so we only hide the span element that is used for the get coins
  	NEW REDDIT
- */
+*/
 ._1vXXD2qKLnHetdKvisFzBD span._3dZnYgFFpifT-M_Vs2FAq6 {
+  display: none !important;
+}
+
+/*
+	hide "Coins" button on navbar - the one that's displayed on right or is hidden inside a dropdown
+	NEW REDDIT
+*/
+a[href^="/coins"]#focus-Coins {
 	display: none !important;
 }
