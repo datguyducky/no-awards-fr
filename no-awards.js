@@ -11,7 +11,6 @@ const loadStyling = async () => {
   await chrome.storage.local.get(
     {
       giveAwardsBtn: false,
-      rpanAwards: true,
       commentsAndPostsAwards: true,
       getCoinsBtn: false,
       notInteractableAwards: false,

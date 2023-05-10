@@ -12,8 +12,7 @@ I'm sure I'm not the only one annoyed by the awards on Reddit. So I created this
 -   works on redesigned and old version of Reddit
 -   disable awards on posts and comments
 -   disable animated awards on comments
--   disable awards on RPAN
--   settings pop-up to customize which awards to show (for example: _show awards on RPAN, but not on comments and posts_)
+-   settings pop-up to customize which awards to show (for example: _show "Get awards" buttons but hide awards on posts and comments)
 -   hide "Give Awards" on comments and posts <sup>**NEW**</sup>
 -   hide "Coins X" on your profile dropdown <sup>**NEW**</sup>
 -   option to show all awards but make them non-interactive <sup>**NEW**</sup>

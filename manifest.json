@@ -3,7 +3,7 @@
 	"version": "2.2.1",
 
 	"name": "No awards for Reddit",
-	"description": "Hide awards all over the redesigned and old Reddit (on posts, comments, RPAN streams and more)",
+	"description": "Hide awards all over the redesigned and old Reddit (on posts, comments and more)",
 	"author": "datguysheepy",
 
 	"icons": {
@@ -34,7 +34,6 @@
 
 	"web_accessible_resources": [
 		"css/commentsAndPostsAwards.css",
-		"css/rpanAwards.css",
 		"css/getCoinsBtn.css",
 		"css/giveAwardsBtn.css",
 		"css/profileAwards.css"

@@ -1,7 +1,6 @@
 const saveSettings = async () => {
   // get all select elements
   const GIVE_AWARD_BTNS = document.getElementById("toggle-op1").checked;
-  const RPAN_AWARDS = document.getElementById("toggle-op2").checked;
   const COMMENTS_AND_POSTS_AWARDS =
     document.getElementById("toggle-op3").checked;
   const GET_COINS_BTN = document.getElementById("toggle-op4").checked;
@@ -16,7 +15,6 @@ const saveSettings = async () => {
   await chrome.storage.local.set(
     {
       giveAwardsBtn: GIVE_AWARD_BTNS,
-      rpanAwards: RPAN_AWARDS,
       commentsAndPostsAwards: COMMENTS_AND_POSTS_AWARDS,
       getCoinsBtn: GET_COINS_BTN,
       notInteractableAwards: NOT_INTERACTABLE_AWARDS,
@@ -46,7 +44,6 @@ const loadSettings = async () => {
   await chrome.storage.local.get(
     {
       giveAwardsBtn: false,
-      rpanAwards: true,
       commentsAndPostsAwards: true,
       getCoinsBtn: false,
       notInteractableAwards: false,
@@ -54,7 +51,6 @@ const loadSettings = async () => {
     },
     (settings) => {
       document.getElementById("toggle-op1").checked = settings.giveAwardsBtn;
-      document.getElementById("toggle-op2").checked = settings.rpanAwards;
       document.getElementById("toggle-op3").checked =
         settings.commentsAndPostsAwards;
       document.getElementById("toggle-op4").checked = settings.getCoinsBtn;
