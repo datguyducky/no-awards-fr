@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
-	"version": "2.2.2",
+	"version": "2.2.3",
 	"name": "No awards for Reddit",
 	"description": "Hide awards all over the redesigned and old Reddit (on posts, comments and more)",
-	"author": "datguysheepy",
+	"author": "datguyducky",
 
 	"icons": {
 		"48": "no-awards48.png",

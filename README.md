@@ -37,4 +37,4 @@ While I'm not available to make this work on mobile, there are a lot of **unoffi
 
 ## 📝 License
 
-No awards for Reddit is an open-source project licensed under the [MIT License](https://github.com/datguysheepy/no-awards-fr/blob/master/LICENSE).
+No awards for Reddit is an open-source project licensed under the [MIT License](https://github.com/datguyducky/no-awards-fr/blob/master/LICENSE).
