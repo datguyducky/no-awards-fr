@@ -1,5 +1,12 @@
 # 🎖️ No awards for Reddit
 
+> [!WARNING]  
+> Effective from the 12th of September 2023, Awards and Coins have been removed from Reddit. For more information, you can refer to this post [here](https://www.reddit.com/r/reddit/comments/14ytp7s/reworking_awarding_changes_to_awards_coins_and/). Due to these changes, this extension has become obsolete, and I had to take the following actions:
+> - Delisted the extension from both the Chrome Web Store and Firefox Add-ons site.
+> - Archived this repository.
+>
+> Reddit is planning to introduce a new reward system in the near future, which might lead to a revival of this extension. But for now, farewell, and heartfelt thanks to everyone who used No Awards for Reddit! 👋
+
 I'm sure I'm not the only one annoyed by the awards on Reddit. So I created this simple extension to completely hide them (on posts and comments), so if you would like to browse Reddit without them - **download** it from here:
 
 -   [Firefox](https://addons.mozilla.org/en-US/firefox/addon/no-awards-for-reddit/)
