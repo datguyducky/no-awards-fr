@@ -1,29 +1,26 @@
-const applyStyling = (key) => {
-  const styling = document.createElement("link");
-  styling.rel = "stylesheet";
-  styling.type = "text/css";
-  styling.href = chrome.runtime.getURL(`css/${key}.css`);
+const applyStylesToShadowElements = (root) => {
+	const shredditPosts = root.querySelectorAll('shreddit-post');
+	// Award button on post - uses shadowRoot so some JS was needed
+	shredditPosts.forEach(post => {
+		if (post.shadowRoot) {
+			const awardButtons = post.shadowRoot.querySelectorAll('award-button');
+			awardButtons.forEach(button => {
+				button.style.display = 'none';
+			});
+		}
+	});
 
-  document.documentElement.insertBefore(styling, null);
+	const feedPosts = root.querySelectorAll('shreddit-feed');
+	// Award button on post when viewing a feed (Popular tab for example or on a subreddit)
+	feedPosts.forEach(post => {
+		if (post.shadowRoot) {
+			const awardButtons = post.shadowRoot.querySelectorAll('award-button');
+			awardButtons.forEach(button => {
+				button.style.display = 'none';
+			});
+		}
+	});
 };
 
-const loadStyling = async () => {
-  await chrome.storage.local.get(
-    {
-      giveAwardsBtn: false,
-      commentsAndPostsAwards: true,
-      getCoinsBtn: false,
-      notInteractableAwards: false,
-      profileAwards: false,
-    },
-    (userSettings) => {
-      Object.entries(userSettings).forEach(([key, checked]) => {
-        if (checked) {
-          applyStyling(key);
-        }
-      });
-    }
-  );
-};
+applyStylesToShadowElements(document);
 
-loadStyling();

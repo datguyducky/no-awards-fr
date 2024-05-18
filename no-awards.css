@@ -1,0 +1,9 @@
+/*
+	May 2024 Update
+	New Reddit
+	
+	Hides awards on comments; currently other places uses shadow root and for that some JavaScript is required...
+ */
+award-button {
+	display: none !important;
+}

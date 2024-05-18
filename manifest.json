@@ -1,6 +1,6 @@
 {
-	"manifest_version": 2,
-	"version": "2.2.3",
+	"manifest_version": 3,
+	"version": "3.0.0",
 	"name": "No awards for Reddit",
 	"description": "Hide awards all over the redesigned and old Reddit (on posts, comments and more)",
 	"author": "datguyducky",
@@ -10,31 +10,16 @@
 		"96": "no-awards96.png",
 		"128": "no-awards128.png"
 	},
-
-	"browser_action": {
-		"default_icon": {
-			"16": "no-awards16.png",
-			"24": "no-awards24.png",
-			"32": "no-awards32.png"
-		},
-		"default_title": "No Awards for Reddit",
-		"default_popup": "no-awards-menu.html"
-	},
-
-	"permissions": ["storage", "tabs"],
-
+	
 	"content_scripts": [
 		{
 			"matches": ["*://*.reddit.com/*"],
-			"run_at": "document_start",
+			"run_at": "document_end",
 			"js": ["no-awards.js"]
+		},
+		{
+			"matches": ["*://*.reddit.com/*"],
+			"css": ["no-awards.css"]
 		}
-	],
-
-	"web_accessible_resources": [
-		"css/commentsAndPostsAwards.css",
-		"css/getCoinsBtn.css",
-		"css/giveAwardsBtn.css",
-		"css/profileAwards.css"
 	]
 }

@@ -1,11 +1,8 @@
 # 🎖️ No awards for Reddit
 
-> [!WARNING]  
-> Effective from the 12th of September 2023, Awards and Coins have been removed from Reddit. For more information, you can refer to this post [here](https://www.reddit.com/r/reddit/comments/14ytp7s/reworking_awarding_changes_to_awards_coins_and/). Due to these changes, this extension has become obsolete, and I had to take the following actions:
-> - Delisted the extension from both the Chrome Web Store and Firefox Add-ons site.
-> - Archived this repository.
->
-> Reddit is planning to introduce a new reward system in the near future, which might lead to a revival of this extension. But for now, farewell, and heartfelt thanks to everyone who used No Awards for Reddit! 👋
+> [!NOTE]
+> 
+> As of May 2024, this extension is back under development because Reddit has decided to reinstate awards (more about it here). With these changes, "No Awards for Reddit" has been updated accordingly. It no longer works for old Reddit, and the settings menu to disable/enable blocking awards in different places has been removed as currently awards are only displayed on posts and comments.
 
 I'm sure I'm not the only one annoyed by the awards on Reddit. So I created this simple extension to completely hide them (on posts and comments), so if you would like to browse Reddit without them - **download** it from here:
 
@@ -16,31 +13,12 @@ I'm sure I'm not the only one annoyed by the awards on Reddit. So I created this
 
 -   free and open-source
 -   used daily by me, so if it stops working I will try to fix it ASAP
--   works on redesigned and old version of Reddit
 -   disable awards on posts and comments
--   disable animated awards on comments
--   settings pop-up to customize which awards to show (for example: _show "Get awards" buttons but hide awards on posts and comments)
--   hide "Give Awards" on comments and posts <sup>**NEW**</sup>
--   hide "Coins X" on your profile dropdown <sup>**NEW**</sup>
--   option to show all awards but make them non-interactive <sup>**NEW**</sup>
-
-## Settings pop-up:
-
-![settings pop-up](settings.png)
+-   hide "Give Awards" on comments and posts
 
 ## Hide awards on mobile
 
-While I'm not available to make this work on mobile, there are a lot of **unofficial Reddit apps** for download and some of them have an option to hide awards, to name a few:
-
--   Rif is fun [Android](https://play.google.com/store/apps/details?id=com.andrewshu.android.reddit)
--   Sync [Android](https://play.google.com/store/apps/details?id=com.laurencedawson.reddit_sync)
--   Boost [Android](https://play.google.com/store/apps/details?id=com.rubenmayayo.reddit)
--   Slide [Android](https://play.google.com/store/apps/details?id=me.ccrama.redditslide) & [iOS](https://apps.apple.com/us/app/slide-for-reddit/id1260626828)
--   Relay [Android](https://play.google.com/store/apps/details?id=free.reddit.news)
--   Apollo [iOS](https://apps.apple.com/app/id979274575)
--   Comet [iOS](https://apps.apple.com/us/app/id1146204813)
-
-**_I'm not a developer of any of these apps, use this list only as a suggestion to which app you can use. Not all of them may have an option to disable awards._**
+In the past, I was able to recommend a list of great unofficial apps for Reddit. However, due to recent "great" changes by Reddit, none of these apps are functional anymore. As a result, I’m not sure if it's still possible to avoid seeing awards on mobile.
 
 ## 📝 License
 
