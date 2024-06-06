@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > 
-> As of May 2024, this extension is back under development because Reddit has decided to reinstate awards (more about it here). With these changes, "No Awards for Reddit" has been updated accordingly. It no longer works for old Reddit, and the settings menu to disable/enable blocking awards in different places has been removed as currently awards are only displayed on posts and comments.
+> As of May 2024, this extension is back under development because Reddit has decided to reinstate awards (more about it [here](https://www.reddit.com/r/reddit/comments/1css0ws/we_heard_you_awards_are_back/)). With these changes, "No Awards for Reddit" has been updated accordingly. It no longer works for old Reddit, and the settings menu to disable/enable blocking awards in different places has been removed as currently awards are only displayed on posts and comments.
 
 I'm sure I'm not the only one annoyed by the awards on Reddit. So I created this simple extension to completely hide them (on posts and comments), so if you would like to browse Reddit without them - **download** it from here:
 
