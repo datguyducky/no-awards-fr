@@ -1,6 +1,6 @@
 {
 	"manifest_version": 3,
-	"version": "3.0.1",
+	"version": "3.0.2",
 	"name": "No awards for Reddit",
 	"description": "Hide awards all over the redesigned and old Reddit (on posts, comments and more)",
 	"author": "datguyducky",
