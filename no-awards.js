@@ -40,6 +40,14 @@ const callback = (mutationsList, observer) => {
 			});
 		}
 	});
+
+	// Gilded gold background on some comments with awards
+	const comments = document.querySelectorAll('shreddit-comment');
+	comments.forEach(comment => {
+		if (comment.hasAttribute('award-count')) {
+			comment.removeAttribute('award-count');
+		}
+	});
 };
 
 const observer = new MutationObserver(callback);
